@@ -1,5 +1,7 @@
-import pymongo
-myclient = pymongo.MongoClient("localhost:27017")
+# uncomment and use one by one
+
+import pymongo # importing module
+myclient = pymongo.MongoClient("localhost:27017") # connecting to DB
 
 
 #Important: In MongoDB, a database is not created until it gets content!
@@ -44,6 +46,9 @@ print("Deleted sucessfully!")
 nmDB = myclient.nameOfTheDB
 collection_nm = myclient.nameOfCollection
 nmDB.collection_nm.drop()
+
 # You can delete a table, or collection as it is called in MongoDB, by using the drop() method.
 # The drop() method returns true
 # if the collection was dropped successfully, and false if the collection does not exist.
+
+
